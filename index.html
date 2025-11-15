@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Henrique Santos da Silva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.4;
+            font-size: 14px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+        
+        .resume-container {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .summary {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        
+        .timeline-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .position {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .company {
+            color: #3498db;
+            font-style: italic;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+        
+        .timeline-content ul {
+            padding-left: 20px;
+        }
+        
+        .timeline-content li {
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-category h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-left: 3px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        .skill-list {
+            list-style-type: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 8px;
+            padding: 5px 10px;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                font-size: 12px;
+                max-width: 100%;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                padding: 20px;
+                margin-bottom: 0;
+            }
+            
+            .section {
+                margin-bottom: 20px;
+            }
+            
+            .timeline-item {
+                page-break-inside: avoid;
+            }
+            
+            .skills-container {
+                display: block;
+            }
+            
+            .skill-category {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="resume-container" id="resumeContent">
+        <header class="header">
+            <h1 class="name">Henrique Santos da Silva</h1>
+            <p class="title">Estudante de Sistemas para Internet | Desenvolvedor Web</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📍 João Pessoa, PB</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧 henriques84282020@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📞 (83) 9 9130-8642</span>
+                </div>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2 class="section-title">Resumo Profissional</h2>
+            <div class="summary">
+                <p>Estudante de Sistemas para Internet com experiência em suporte técnico e grande interesse em desenvolvimento de software. Atualmente atuo como estagiário em TI, aplicando conhecimentos práticos em suporte técnico e resolução de problemas. Minha experiência anterior desenvolveu habilidades em organização, análise de dados e comunicação.</p>
+                <p>Possuo conhecimentos em desenvolvimento web e busco oportunidade para aplicar e expandir meus conhecimentos em Java e Python, linguagens que tenho estudado e praticado. Com grande curiosidade e vontade de aprender, almejo contribuir com projetos desafiadores na área de tecnologia.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Experiência Profissional</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="position">Estagiário em TI</span> - 
+                        <span class="company">Empresa Quality, João Pessoa, PB</span>
+                    </div>
+                    <div class="date">06/2025 – Atual</div>
+                </div>
+                <div class="timeline-content">
+                    <ul>
+                        <li>Atendimento ao cliente e suporte técnico para resolução de problemas em softwares e equipamentos</li>
+                        <li>Participação em treinamentos para aprimoramento contínuo em novas tecnologias</li>
+                        <li>Suporte para correções de softwares e configuração de equipamentos</li>
+                        <li>Auxílio na realização de apresentações técnicas internas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="position">Atendente de Retenção</span> - 
+                        <span class="company">AeC Centro de Contatos S.A, João Pessoa, PB</span>
+                    </div>
+                    <div class="date">01/2025 – 06/2025</div>
+                </div>
+                <div class="timeline-content">
+                    <ul>
+                        <li>Atendimento ao cliente via telefone com foco em retenção e fidelização</li>
+                        <li>Análise de situações para propor soluções personalizadas que atendessem às expectativas dos clientes</li>
+                        <li>Registro detalhado de interações no sistema da empresa</li>
+                        <li>Cumprimento de metas de atendimento e satisfação do cliente</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="position">Auxiliar Contábil</span> - 
+                        <span class="company">Contabilidade Pamplona, João Pessoa, PB</span>
+                    </div>
+                    <div class="date">01/2024 – 01/2025</div>
+                </div>
+                <div class="timeline-content">
+                    <ul>
+                        <li>Realização de lançamentos contábeis e organização de documentos fiscais</li>
+                        <li>Emissão de notas fiscais e controle de entradas e saídas</li>
+                        <li>Auxílio na elaboração de relatórios e planilhas para controle financeiro</li>
+                        <li>Suporte no fechamento mensal e identificação de discrepâncias</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="position">Tecnólogo em Sistemas para Internet</span> - 
+                        <span class="company">UNIPÊ - Centro Universitário de João Pessoa</span>
+                    </div>
+                    <div class="date">Jan 2025 – Atual</div>
+                </div>
+                <div class="timeline-content">
+                    <p>Cursando</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <span class="position">Ensino Médio Completo</span>
+                    </div>
+                    <div class="date">2024</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Competências</h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Técnicas</h3>
+                    <ul class="skill-list">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript (Básico)</li>
+                        <li>PHP (Básico)</li>
+                        <li>Java (POO)</li>
+                        <li>Python (Básico)</li>
+                        <li>Git (Controle de Versão)</li>
+                        <li>Suporte Técnico</li>
+                        <li>Lógica de Programação</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Comportamentais</h3>
+                    <ul class="skill-list">
+                        <li>Resolução de Problemas</li>
+                        <li>Comunicação Clara</li>
+                        <li>Atenção a Detalhes</li>
+                        <li>Proatividade</li>
+                        <li>Adaptabilidade</li>
+                        <li>Trabalho em Equipe</li>
+                        <li>Vontade de Aprender</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
